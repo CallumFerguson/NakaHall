@@ -62,7 +62,7 @@ public class FPS : MonoBehaviour
         //move the actual player here
         if (m_velocity != Vector3.zero)
         {
-            m_Rigid.MovePosition(m_Rigid.position + m_velocity * Time.fixedDeltaTime);
+            m_Rigid.MovePosition(m_Rigid.position + m_velocity * Time.deltaTime);
         }
 
         if (m_rotation != Vector3.zero)
